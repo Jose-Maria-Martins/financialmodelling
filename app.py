@@ -154,7 +154,7 @@ st.subheader("Strategy allocation held each month")
 held = strat["weights"].loc[rets.index]
 st.altair_chart(allocation_chart(held), width="stretch")
 
-st.subheader(f"Latest allocation (decided {prices.index[-1]:%d %b %Y}, for the following month)")
+st.subheader(f"Latest allocation (decided at the end of {prices.index[-1]:%b %Y}, for the following month)")
 weights = s.target_weights(signal, top_n, cash_filter).iloc[-1]
 st.table(pd.DataFrame({"Score": signal.iloc[-1].reindex(weights.index).map(lambda v: show("CAGR", v)),
                        "Weight": weights.map("{:.1%}".format)}))

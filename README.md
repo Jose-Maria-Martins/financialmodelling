@@ -4,7 +4,7 @@ App for the 2270 Financial Modeling group assignment. The user changes the assum
 (ETFs held, lookbacks, cash filter, transaction cost, benchmarks, years shown) and sees the performance
 against the benchmark. The default settings reproduce the notebook's base case.
 
-- App: `<app URL – to add>`
+- App: https://jose-maria-martins-financialmodelling-app-bsmmmx.streamlit.app/
 - `app.py`: the page
 - `strategy.py`: configuration and calculations, copied unchanged from the notebook
 - `requirements.txt`: dependencies

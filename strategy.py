@@ -10,7 +10,7 @@ import yfinance as yf
 # ---- Config (same values as the notebook) ----
 TICKERS   = ["SPY", "EFA", "EEM", "IEF", "LQD", "TIP", "GLD", "DBC"]
 START     = "2006-01-01"
-END       = "2025-10-31"           # last month-end included
+END       = "2026-10-31"           # last month-end included
 LOOKBACK  = (3, 6)                 # signal = average of the 3- and 6-month returns
 TOP_N     = 3                      # ETFs held each month
 ABS_FILTER = True                  # a selected ETF with a negative score goes to cash
